@@ -18,7 +18,11 @@ namespace Ejercicio_6
             c1.SetMarca(marca);
             c1.SetModelo(modelo);
 
-            
+            c1.AtributosCoche(marca, modelo);
+            Console.ReadLine();
+
+            Coche c2 = new Coche("Volkswagen", "Golf R32");
+            c2.AtributosCoche(marca, modelo);
             Console.ReadLine();
 
         }

@@ -40,10 +40,10 @@ namespace Ejercicio_6
             this.modelo = modelo;
         }
 
-        public string AtributosCoche(string marca, string modelo)
+        public void AtributosCoche(string marca, string modelo)
         {
 
-            return AtributosCoche(marca, modelo);
+            Console.WriteLine("Marca " + marca + " modelo " + modelo);
         }
 
 
