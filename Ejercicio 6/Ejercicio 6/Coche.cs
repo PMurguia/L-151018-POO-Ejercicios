@@ -13,7 +13,7 @@ namespace Ejercicio_6
 
         public Coche()
         {
-
+            
         }
 
         public Coche(string marca,string modelo)
@@ -40,6 +40,11 @@ namespace Ejercicio_6
             this.modelo = modelo;
         }
 
+        public string AtributosCoche(string marca, string modelo)
+        {
+
+            return AtributosCoche(marca, modelo);
+        }
 
 
 

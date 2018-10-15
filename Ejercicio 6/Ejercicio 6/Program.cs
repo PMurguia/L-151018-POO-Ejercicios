@@ -10,6 +10,17 @@ namespace Ejercicio_6
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Marca de coche. ");
+            string marca = Console.ReadLine();
+            Console.WriteLine("Modelo. ");
+            string modelo = Console.ReadLine();
+            Coche c1 = new Coche();
+            c1.SetMarca(marca);
+            c1.SetModelo(modelo);
+
+            
+            Console.ReadLine();
+
         }
     }
 }
