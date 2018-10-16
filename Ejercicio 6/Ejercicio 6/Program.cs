@@ -10,21 +10,55 @@ namespace Ejercicio_6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Marca de coche. ");
-            string marca = Console.ReadLine();
-            Console.WriteLine("Modelo. ");
-            string modelo = Console.ReadLine();
-            Coche c1 = new Coche();
-            c1.SetMarca(marca);
-            c1.SetModelo(modelo);
 
-            c1.AtributosCoche(marca, modelo);
+            
+            
+            Coche c1 = new Coche();
+            c1.SetMarca("Alfa Romeo");
+            c1.SetModelo("Giulietta");
+
+            Console.WriteLine(c1.GetAtributosCoche());
             Console.ReadLine();
+
+
+            Consumo consumo1 = new Consumo();
+            consumo1.SetKms(378);
+            consumo1.SetLitros(43);
+            consumo1.SetVelocidadMedia(175);
+            consumo1.SetCombustible("Diesel");
+
+            Console.WriteLine(consumo1.GetTiempo());
+            Console.WriteLine();
+            Console.WriteLine(consumo1.GetConsumoMedio());
+            Console.WriteLine();
+            Console.WriteLine(consumo1.GetConsumoEuros());
+            Console.WriteLine();
+            Console.WriteLine(consumo1.MostrarDatos());
+
+            Console.ReadLine();
+
 
             Coche c2 = new Coche("Volkswagen", "Golf R32");
-            c2.AtributosCoche(marca, modelo);
+            Console.WriteLine(c2.GetAtributosCoche());
             Console.ReadLine();
+            Console.WriteLine("Kilómetros totales del viaje. ");
+            double kms = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Litros consumidos. ");
+            double litros = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Velocidad media durante el trayecto.");
+            double vMed = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Tipo de combustible\n95-Gasolina 95\n98-Gasolina 98\nDiesel-Diesel");
+            string combustible = Console.ReadLine();
 
+            Consumo consumo2 = new Consumo(kms, litros, vMed, combustible);
+            Console.WriteLine(consumo2.GetTiempo());
+            Console.WriteLine();
+            Console.WriteLine(consumo2.GetConsumoMedio());
+            Console.WriteLine();
+            Console.WriteLine(consumo2.GetConsumoEuros());
+            Console.WriteLine();
+            Console.WriteLine(consumo2.MostrarDatos());
+            Console.ReadLine();
         }
     }
 }

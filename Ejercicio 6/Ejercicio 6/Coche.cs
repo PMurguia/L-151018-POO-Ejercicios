@@ -10,6 +10,10 @@ namespace Ejercicio_6
     {
         private string marca;
         private string modelo;
+        private double kms;
+        private double litros;
+        private double vMedia;
+
 
         public Coche()
         {
@@ -40,12 +44,13 @@ namespace Ejercicio_6
             this.modelo = modelo;
         }
 
-        public void AtributosCoche(string marca, string modelo)
+        public string GetAtributosCoche()
         {
-
-            Console.WriteLine("Marca " + marca + " modelo " + modelo);
+            return "Marca " + this.marca + " y modelo " + this.modelo;
         }
 
+
+      
 
 
     }
