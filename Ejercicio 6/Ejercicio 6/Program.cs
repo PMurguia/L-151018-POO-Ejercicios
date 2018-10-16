@@ -27,6 +27,8 @@ namespace Ejercicio_6
             consumo1.SetVelocidadMedia(175);
             consumo1.SetCombustible("Diesel");
 
+            Console.WriteLine("DATOS DE VIAJE.");
+
             Console.WriteLine(consumo1.GetTiempo());
             Console.WriteLine();
             Console.WriteLine(consumo1.GetConsumoMedio());
@@ -41,15 +43,16 @@ namespace Ejercicio_6
             Coche c2 = new Coche("Volkswagen", "Golf R32");
             Console.WriteLine(c2.GetAtributosCoche());
             Console.ReadLine();
-            Console.WriteLine("Kilómetros totales del viaje. ");
+            Console.WriteLine("Introduce kilómetros totales del viaje: ");
             double kms = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Litros consumidos. ");
+            Console.WriteLine("Introduce litros consumidos: ");
             double litros = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Velocidad media durante el trayecto.");
+            Console.WriteLine("Introduce velocidad media durante el trayecto.");
             double vMed = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Tipo de combustible\n95-Gasolina 95\n98-Gasolina 98\nDiesel-Diesel");
+            Console.WriteLine("Tipo de combustible utilizado:\n95-Gasolina 95\n98-Gasolina 98\nDiesel-Diesel");
             string combustible = Console.ReadLine();
-
+            Console.WriteLine();
+            Console.WriteLine("DATOS DE VIAJE");
             Consumo consumo2 = new Consumo(kms, litros, vMed, combustible);
             Console.WriteLine(consumo2.GetTiempo());
             Console.WriteLine();

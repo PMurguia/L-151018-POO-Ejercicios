@@ -67,7 +67,7 @@ namespace Ejercicio_6
 
         public string GetTiempo()
         {
-            return "Se ha realizado un viaje de " + kms + " kms, a una velocidad media de " + vMed + " Km/h. El viaje ha tenido una duración media de  " + (kms / vMed) + " horas.";
+            return "Se ha realizado un viaje de " + kms + " kms, a una velocidad media de " + vMed + " Km/h.\nEl viaje ha tenido una duración media de  " + (kms / vMed) + " horas.";
         }
 
         public string GetConsumoMedio()
