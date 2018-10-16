@@ -65,29 +65,29 @@ namespace Ejercicio_6
 
 
 
-        public string GetTiempo()
+        public double GetTiempo()
         {
-            return "Se ha realizado un viaje de " + kms + " kms, a una velocidad media de " + vMed + " Km/h.\nEl viaje ha tenido una duración media de  " + (kms / vMed) + " horas.";
+            return kms / vMed;
         }
 
-        public string GetConsumoMedio()
+        public double GetConsumoMedio()
         {
-            return "Ha consumido " + ((litros/kms)*100) + " litros cada 100 Kms.";
+            return ((litros/kms)*100);
         }
 
         public string GetConsumoEuros()
         {
             if(combustible == "95")
             {
-                return "El gasto total del viaje ha sido de " + (litros * 1.14) + " euros. ";
+                return "El gasto a los 100 Kms ha sido de " + GetConsumoMedio() * 1.14 + " euros. ";
             }
             else if(combustible == "98")
             {
-                return "El gasto total del viaje ha sido de " + (litros * 1.25) + " euros. ";
+                return "El gasto a los 100 Kms ha sido de " + (GetConsumoMedio() * 1.25) + " euros. ";
             }
             else if (combustible == "Diesel")
             {
-                return "El gasto total del viaje ha sido de " + (litros * 1.04) + " euros. ";
+                return "El gasto a los 100 Kms ha sido de " + (GetConsumoMedio() * 1.04) + " euros. ";
             }
             else
             {
@@ -95,7 +95,7 @@ namespace Ejercicio_6
             }
         }
 
-        public string MostrarDatos()
+        public string MostrarDatos(Coche c1)
         {
             return kms + " kms recorridos \n" + litros + " litros consumidos \n" + "A una velocidad media de " + vMed + " Kms/h\nCon conmbustible de tipo " + combustible; 
         }

@@ -35,7 +35,7 @@ namespace Ejercicio_6
             Console.WriteLine();
             Console.WriteLine(consumo1.GetConsumoEuros());
             Console.WriteLine();
-            Console.WriteLine(consumo1.MostrarDatos());
+            Console.WriteLine(consumo1.MostrarDatos(c1));
 
             Console.ReadLine();
 
@@ -60,8 +60,9 @@ namespace Ejercicio_6
             Console.WriteLine();
             Console.WriteLine(consumo2.GetConsumoEuros());
             Console.WriteLine();
-            Console.WriteLine(consumo2.MostrarDatos());
+            Console.WriteLine(consumo2.MostrarDatos(c2));
             Console.ReadLine();
         }
     }
 }
+  
