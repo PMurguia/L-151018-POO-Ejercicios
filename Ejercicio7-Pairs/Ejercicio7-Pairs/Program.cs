@@ -53,7 +53,7 @@ namespace ConsoleApp2
             co1.SetFechaNacimiento(h);
             co1.SetTipoContacto("AMIGOS");
 
-            Contacto2 co2 = new Contacto2("Jon",931212123);
+            Contacto2 co2 = new Contacto2("Jon",931212123,"TRABAJO");
             Contacto2 co3 = new Contacto2("Ane", g, "FAMILIARES");
 
             Contacto2 co4 = new Contacto2();

@@ -79,15 +79,13 @@ namespace ContactoTipo
             }
         }
 
-        public Contacto2(string nombre, int telefono)
+        public Contacto2(string nombre, int telefono, string tipoContacto)
         {
             this.nombre = nombre;
             this.telefono = telefono;
             this.fechaNacimiento = DateTime.Today;
-            nContactos++;
-            nTrabajo++;
-            tipoContacto = "TRABAJO";
-            Console.WriteLine("Contacto trabajo agregado.");
+            Contacto(tipoContacto);
+            this.tipoContacto = tipoContacto;
            
             
         }
