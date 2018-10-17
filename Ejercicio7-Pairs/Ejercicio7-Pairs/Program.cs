@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ContactoTipo;
 
 namespace ConsoleApp2
 {
@@ -11,7 +10,8 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            DateTime d = new DateTime(1990,2,4);
+
+            DateTime d = new DateTime(1990, 2, 4);
             DateTime f = new DateTime(1992, 2, 4);
             DateTime g = new DateTime(1995, 05, 05);
             DateTime h = new DateTime(1990, 03, 06);
@@ -53,7 +53,7 @@ namespace ConsoleApp2
             co1.SetFechaNacimiento(h);
             co1.SetTipoContacto("AMIGOS");
 
-            Contacto2 co2 = new Contacto2("Jon",931212123,"TRABAJO");
+            Contacto2 co2 = new Contacto2("Jon", 931212123, "TRABAJO");
             Contacto2 co3 = new Contacto2("Ane", g, "FAMILIARES");
 
             Contacto2 co4 = new Contacto2();
@@ -67,6 +67,19 @@ namespace ConsoleApp2
 
 
             co1.Contador();
+            
+            List<Contacto2> Contact = new List<Contacto2>() { co1, co2, co3, co4, co5, co6 };
+           
+            foreach (Contacto2 n in Contact)
+            {
+                Console.WriteLine(n.GetNombre());
+                Console.WriteLine(n.GetTelefono());
+                Console.WriteLine(n.GetFechaNacimiento());
+                Console.WriteLine(n.GetTipoContacto() + "\n");
+            }
+            
+            
+            
 
 
             //c1.ConvertirFecha();
@@ -74,12 +87,12 @@ namespace ConsoleApp2
             //Contacto f1 = new Contacto();
             //f1.Felicitar();
 
-            Console.WriteLine(co1.MostrarDatos());
-            Console.WriteLine(co2.MostrarDatos());
-            Console.WriteLine(co3.MostrarDatos());
-            Console.WriteLine(co4.MostrarDatos());
-            Console.WriteLine(co5.MostrarDatos());
-            Console.WriteLine(co6.MostrarDatos());
+            //Console.WriteLine(co1.MostrarDatos());
+            //Console.WriteLine(co2.MostrarDatos());
+            //Console.WriteLine(co3.MostrarDatos());
+            //Console.WriteLine(co4.MostrarDatos());
+            //Console.WriteLine(co5.MostrarDatos());
+            //Console.WriteLine(co6.MostrarDatos());
 
 
 

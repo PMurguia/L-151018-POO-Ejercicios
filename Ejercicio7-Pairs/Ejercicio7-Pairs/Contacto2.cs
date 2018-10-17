@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ContactoTipo
+namespace ConsoleApp2
 {
     class Contacto2
     {
@@ -178,7 +178,7 @@ namespace ContactoTipo
             return (GetNombre() + " " + GetTelefono() + " " + GetFechaNacimiento() + " " + GetTipoContacto());
         }
 
-        public void Contacto(string tipoContacto)
+        public void Contactos(string tipoContacto)
         {
             //int nFamiliares = 0, nAmigos = 0, nTrabajo = 0, nEstudios = 0;
 
