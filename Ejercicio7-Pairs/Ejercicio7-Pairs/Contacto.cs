@@ -118,7 +118,7 @@ namespace ConsoleApp2
         public void Felicitar()
         {
             System.Console.WriteLine("Felicidades en tus " + ObtenerEdad() + " años");
-            System.Console.ReadLine();
+         
         }
 
         public string MostrarDatos()
